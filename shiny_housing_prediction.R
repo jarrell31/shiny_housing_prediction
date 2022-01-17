@@ -2,6 +2,7 @@ library(shiny)
 library(dplyr)
 library(ggplot2)
 
+#remove scientific notation
 options(scipen=999)
 
 housing_predictions <- readRDS("train_modeling.rds")
