@@ -2,6 +2,7 @@ library(shiny)
 library(dplyr)
 library(ggplot2)
 
+options(scipen=999)
 
 housing_predictions <- readRDS("train_modeling.rds")
 results_all <- read.csv("results_all.csv")
