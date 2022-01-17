@@ -9,7 +9,7 @@ results_all <- results_all[,-1]
 variable_selection_cat <- colnames(housing_predictions[c(-1,-2),3:48])
 variable_selection_contin <- colnames(housing_predictions[-1,49:67])
 
-# Define UI for application that draws a histogram
+# Define UI
 ui <- fluidPage(
   tabsetPanel(
     tabPanel("House Price Prediction",
@@ -33,7 +33,7 @@ ui <- fluidPage(
     )
 )
 )
-# Define server logic required to draw a histogram
+# Define server logic
 server <- function(input, output) {
 
   output$continuous_plot <- renderPlot({
